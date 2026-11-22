@@ -134,4 +134,4 @@ def test_resultado_disponibiliza_dados_da_entrega_e_nota_final():
         "Engenharia",
         "Atividade 5",
     )
-    assert nota_original - resultado[0] == 1
+    assert nota_original - resultado[0] == pytest.approx(1.0)
